@@ -23,7 +23,7 @@ export const LandingPage: React.FC = () => {
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
-                        className="text-6xl md:text-8xl font-bold text-brand-500 mb-6 drop-shadow-lg"
+                        className="text-5xl md:text-8xl font-bold text-brand-500 mb-6 drop-shadow-lg"
                     >
                         Nature's Vitality
                     </motion.h1>
@@ -33,7 +33,7 @@ export const LandingPage: React.FC = () => {
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.3 }}
-                        className="text-2xl md:text-3xl text-white font-light tracking-wide w-full drop-shadow-md whitespace-nowrap"
+                        className="text-xl md:text-3xl text-white font-light tracking-wide w-full drop-shadow-md md:whitespace-nowrap"
                     >
                         Unlock your true potential with nature's best kept secret.
                     </motion.p>
@@ -68,7 +68,7 @@ export const LandingPage: React.FC = () => {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.8 }}
                         >
-                            <h2 className="text-4xl font-bold text-brand-900 mb-6">Pure & Natural Source</h2>
+                            <h2 className="text-3xl md:text-4xl font-bold text-brand-900 mb-6">Pure & Natural Source</h2>
                             <p className="text-xl text-brand-700 leading-relaxed mb-6">
                                 We harvest only the freshest ingredients from organic farms.
                                 Every drop is packed with essential vitamins and minerals designed to
@@ -113,7 +113,7 @@ export const LandingPage: React.FC = () => {
                                     transition={{ duration: 0.8 }}
                                     className="text-left mb-8"
                                 >
-                                    <h2 className="text-4xl font-bold text-brand-900 mb-4">Why Choose Us?</h2>
+                                    <h2 className="text-3xl md:text-4xl font-bold text-brand-900 mb-4">Why Choose Us?</h2>
                                     <p className="text-brand-700 text-lg">Experience the difference with our premium formula.</p>
                                 </motion.div>
                                 <div className="grid grid-cols-1 gap-4 flex-grow content-center">
@@ -126,12 +126,12 @@ export const LandingPage: React.FC = () => {
                                 initial={{ opacity: 0, scale: 0.9 }}
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 transition={{ duration: 0.8 }}
-                                className="lg:w-1/2 relative rounded-2xl overflow-hidden shadow-2xl"
+                                className="lg:w-1/2 relative rounded-2xl overflow-hidden shadow-2xl min-h-[300px] lg:min-h-auto"
                             >
                                 <img
                                     src="/images/v5.png"
                                     alt="Why Choose Us"
-                                    className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700"
+                                    className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                                 />
                             </motion.div>
                         </div>
@@ -148,7 +148,7 @@ export const LandingPage: React.FC = () => {
                             className="flex-1"
                         >
                             <span className="text-brand-300 font-bold tracking-wider uppercase text-sm">Premium Selection</span>
-                            <h2 className="text-4xl font-bold text-white mb-6 mt-2">NMN Collagen Plus</h2>
+                            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 mt-2">NMN Collagen Plus</h2>
                             <p className="text-xl text-brand-100 leading-relaxed mb-8">
                                 Our flagship product combines the power of NMN and low-molecular collagen.
                                 Designed for those who refuse to compromise on their health.
@@ -182,7 +182,7 @@ export const LandingPage: React.FC = () => {
                 {/* Section: Reviews */}
                 <Section bg="bg-white">
                     <div className="container mx-auto px-4 text-center">
-                        <h2 className="text-4xl font-bold text-brand-900 mb-12">Verified Reviews</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-brand-900 mb-12">Verified Reviews</h2>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                             <ReviewCard name="Sarah K." text="I've never felt more alive. This is a game changer!" />
                             <ReviewCard name="James D." text="The quality is unmatched. Better than anything else I've tried." />
@@ -198,9 +198,9 @@ export const LandingPage: React.FC = () => {
                         whileInView={{ scale: 1, opacity: 1 }}
                         className="text-center max-w-3xl mx-auto"
                     >
-                        <h2 className="text-5xl font-bold text-brand-900 mb-8">Start Your Journey Today</h2>
-                        <p className="text-2xl text-brand-800 mb-10 whitespace-nowrap">Join thousands of satisfied customers who have transformed their health.</p>
-                        <button className="bg-brand-600 hover:bg-brand-700 text-white text-2xl font-bold py-5 px-16 rounded-full shadow-xl transition-all transform hover:scale-105 hover:shadow-2xl">
+                        <h2 className="text-3xl md:text-5xl font-bold text-brand-900 mb-8">Start Your Journey Today</h2>
+                        <p className="text-lg md:text-2xl text-brand-800 mb-10 md:whitespace-nowrap">Join thousands of satisfied customers who have transformed their health.</p>
+                        <button className="bg-brand-600 hover:bg-brand-700 text-white text-xl md:text-2xl font-bold py-4 px-10 md:py-5 md:px-16 rounded-full shadow-xl transition-all transform hover:scale-105 hover:shadow-2xl">
                             Order Now - $49.99
                         </button>
                     </motion.div>
